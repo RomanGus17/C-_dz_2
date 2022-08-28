@@ -32,4 +32,17 @@
 // 7 -> да
 // 1 -> нет
 
+Console.Write("Введите цифру от 1 до 7, обозначающую день недели: ");
+int dayNum = Convert.ToInt32(Console.ReadLine());
 
+void NumberOfTheDayOfTheWeek (int dayNum) {
+    
+  if (dayNum == 6 || dayNum == 7) {
+  Console.WriteLine("Выходной день");
+  }
+  else if (dayNum < 1 || dayNum > 7) {
+    Console.WriteLine("Ошибка. Введите цифру от 1 до 7");
+  }
+  else Console.WriteLine("Будний день");
+}
+NumberOfTheDayOfTheWeek(dayNum);
